@@ -13,10 +13,13 @@ public class SnakeAndLadder {
         System.out.println("Welcome to the Snake And Ladder Game :-) ");
 //          Initialization of the Single player position is Starts with 0
         int SingPlyrPos = 0;
+
+        int DiesCount =0;
         Random random = new Random();
-       for (int i = SingPlyrPos; i <= Ending_Wining_Position; i++) {
+       for (SingPlyrPos = 0; SingPlyrPos<=Ending_Wining_Position;) {
            int dies = random.nextInt(6) + 1;
            System.out.println("Number on dies =" + dies);
+           System.out.println(DiesCount++);
 
         /*Generating random option for checks
         Options to check Player Plays or not
@@ -63,7 +66,9 @@ public class SnakeAndLadder {
                 */
            }
            System.out.println("Now The Single Player Position is :- " + SingPlyrPos);
+
        }
+        System.out.println("Total Moves :- " + DiesCount);
     }
 
 }
