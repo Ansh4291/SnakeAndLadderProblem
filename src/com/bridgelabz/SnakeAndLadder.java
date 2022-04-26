@@ -55,12 +55,7 @@ public class SnakeAndLadder {
                    SingPlyrPos=0;
                }
 
-//         Again checks the if else condition
-               /*Single player position is minus dies is greater than equal to zero
-               then Single player position is equal to single player position minus dies
-               otherwise its starts with single player position
 
-                */
            }
            System.out.println("Now The Single Player Position is :- " + SingPlyrPos);
        }
