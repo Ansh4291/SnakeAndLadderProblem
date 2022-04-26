@@ -37,23 +37,30 @@ public class SnakeAndLadder {
                System.out.println("Ladder");
                SingPlyrPos = SingPlyrPos + dies;
                System.out.println("Now The Single Player Position is :- " + SingPlyrPos);
+               if (SingPlyrPos+dies <= Ending_Wining_Position){
+
+                   SingPlyrPos=SingPlyrPos+dies;
+               }else {
+                   SingPlyrPos=SingPlyrPos;
+               }
            }
         /*Applying else Condition
         else Condition Prints the Snake
          */
            else {
                System.out.println("Snake");
+               if (SingPlyrPos -dies > 0){
+                   SingPlyrPos =SingPlyrPos-dies;
+               }else{
+                   SingPlyrPos=0;
+               }
+
 //         Again checks the if else condition
                /*Single player position is minus dies is greater than equal to zero
                then Single player position is equal to single player position minus dies
                otherwise its starts with single player position
+
                 */
-               if (SingPlyrPos - dies >= 0) {
-                   SingPlyrPos = SingPlyrPos - dies;
-               }
-               else{
-                   SingPlyrPos =0;
-               }
            }
            System.out.println("Now The Single Player Position is :- " + SingPlyrPos);
        }
